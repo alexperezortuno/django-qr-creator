@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+core/__init__.py
+core/render.py
+django_qr_code.egg-info/PKG-INFO
+django_qr_code.egg-info/SOURCES.txt
+django_qr_code.egg-info/dependency_links.txt
+django_qr_code.egg-info/top_level.txt
+views/__init__.py
+views/image_render.py
