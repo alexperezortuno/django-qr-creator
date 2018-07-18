@@ -8,5 +8,8 @@ django_qr_code.egg-info/PKG-INFO
 django_qr_code.egg-info/SOURCES.txt
 django_qr_code.egg-info/dependency_links.txt
 django_qr_code.egg-info/top_level.txt
+templatetags/__init__.py
+templatetags/django_qr_code.py
 views/__init__.py
+views/demo.py
 views/image_render.py
