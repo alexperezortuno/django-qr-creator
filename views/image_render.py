@@ -1,4 +1,4 @@
-from django_qr_code.core import Image
+from django_qr_creator.core import Image
 
 
 def image_with_vars(request, param_data=1, extension='png'):

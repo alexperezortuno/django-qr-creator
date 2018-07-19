@@ -8,20 +8,20 @@ with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='django_qr_code',
-    version='0.1',
+    name='django_qr_creator',
+    version='0.1.1',
     packages=find_packages(),
     include_package_data=True,
     license='BSD License',  # example license
-    description='A simple Django app to conduct Web-based polls.',
+    description='A simple Django app to create QR images in template',
     long_description=README,
-    url='http://www.glign.com/',
+    url='https://github.com/alexperezortuno/django-qr-creator',
     author='Alexander Perez Ortuño',
     author_email='alexperezortuno@gmail.com',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
-        'Framework :: Django :: X.Y',  # replace "X.Y" as appropriate
+        'Framework :: Django :: 2.0',  # replace "X.Y" as appropriate
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',  # example license
         'Operating System :: OS Independent',

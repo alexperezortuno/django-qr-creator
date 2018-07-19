@@ -1,8 +1,8 @@
 Metadata-Version: 1.1
-Name: django_qr_code
-Version: 0.1
-Summary: A simple Django app to conduct Web-based polls.
-Home-page: http://www.glign.com/
+Name: django_qr_creator
+Version: 0.1.1
+Summary: A simple Django app to create QR images in template
+Home-page: https://github.com/alexperezortuno/django-qr-creator
 Author: Alexander Perez Ortuño
 Author-email: alexperezortuno@gmail.com
 License: BSD License
@@ -19,12 +19,12 @@ Description: =====
         
             INSTALLED_APPS = [
                 ...
-                'django_qr_code',
+                'django_qr_creator',
             ]
         
         2. Include the django_qr_code URLconf in your project urls.py like this::
         
-            path('image/', include('django_qr_code.urls')),
+            path('image/', include('django_qr_creator.urls')),
         
         3. Run `python manage.py migrate` to create the polls models.
         
@@ -32,10 +32,50 @@ Description: =====
            to create a poll (you'll need the Admin app enabled).
         
         5. Visit http://127.0.0.1:8000/image/data/qr.png to participate in the django_qr_code.
+        
+        Tested in python 3.6 with Django 2.0
+        
+        Example of use in a template
+        ----------------------------
+        ```html
+        {% load django_qr_creator %}
+        
+        ```
+        Load this tags in you html template
+        
+        ```html
+        {% qr url='google.com' %}
+        ```
+        
+        For QR URL
+        
+        ```html
+        {% qr tel='+56948161822' %}
+        ```
+        
+        For QR Tel
+        
+        ```html
+        {% qr email='test@test.test' %}
+        ```
+        
+        For QR Mail
+        
+        ```html
+        {% qr location='40.7127753,-74.0059728' altitude='15' %}
+        ```
+        
+        For QR Location
+        
+        ```html
+        {% qr sms='+56948161822' message='this is a test' %}
+        ```
+        
+        For QR SMS
 Platform: UNKNOWN
 Classifier: Environment :: Web Environment
 Classifier: Framework :: Django
-Classifier: Framework :: Django :: X.Y
+Classifier: Framework :: Django :: 2.0
 Classifier: Intended Audience :: Developers
 Classifier: License :: OSI Approved :: BSD License
 Classifier: Operating System :: OS Independent
