@@ -1,5 +1,5 @@
 from django import template
-from django_qr_creator.core import Image
+from ..render import Image
 
 register = template.Library()
 
