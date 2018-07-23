@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: django_qr_creator
-Version: 0.1.1
+Version: 0.1.2
 Summary: A simple Django app to create QR images in template
 Home-page: https://github.com/alexperezortuno/django-qr-creator
 Author: Alexander Perez Ortuño
